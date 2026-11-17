@@ -371,3 +371,25 @@ The application uses centralized error-handling middleware (`src/middleware/erro
 - **400 Bad Request:** Field validation errors, invalid stock adjustments, or duplicate unique keys (`sku`).
 - **404 Not Found:** Invalid or non-existent document IDs.
 - **500 Internal Server Error:** Unexpected server-side issues.
+## Postman API Output Screenshots
+
+### 1. Get All Products (`GET /api/products`)
+![Get All Products](./screenshots/1-get-products.png)
+
+### 2. Create Product (`POST /api/products`)
+![Create Product](./screenshots/2-create-product.png)
+
+### 3. Update Product (`PUT /api/products/:id`)
+![Update Product](./screenshots/3-update-product.png)
+
+### 4. Stock Adjustment (`PATCH /api/products/:id/stock`)
+![Stock Update](./screenshots/4-stock-update.png)
+
+### 5. Low-Stock Alert Report (`GET /api/products/low-stock`)
+![Low Stock Report](./screenshots/5-low-stock.png)
+
+### 6. Category-wise Inventory Summary (`GET /api/products/summary`)
+![Category Summary](./screenshots/6-summary.png)
+
+### 7. Delete Product (`DELETE /api/products/:id`)
+![Delete Product](./screenshots/7-delete-product.png)
